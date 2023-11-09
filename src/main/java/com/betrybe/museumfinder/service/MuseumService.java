@@ -50,4 +50,9 @@ public class MuseumService implements MuseumServiceInterface {
       throw new InvalidCoordinateException();
     }
   }
+
+  @Override
+  public Museum getMuseum(Long id) {
+    return this.database.getMuseum(id).orElseThrow(() -> new MuseumNotFoundException());
+  }
 }
