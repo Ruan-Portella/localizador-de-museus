@@ -1,9 +1,9 @@
 package com.betrybe.museumfinder.exception;
 
 /**
- * InvalidCoordinateException.
+ * MuseumNotFoundException.
  */
 
-public class InvalidCoordinateException extends RuntimeException {
+public class MuseumNotFoundException extends RuntimeException {
   private static final long serialVersionUID = 1L;
 }
